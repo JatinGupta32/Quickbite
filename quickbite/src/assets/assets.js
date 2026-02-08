@@ -8,7 +8,7 @@ import icecream from './icecream.png';
 import pizza from './pizza.png';
 import rolls from './rolls.png';
 import salad from './salad.png';
-
+import meals from './Meals.jpg';
 import profile from './profile.png';
 import delivery from './delivery.png';
 
@@ -33,7 +33,7 @@ export const categories = [
         icon: cakes
     },
     {
-        category: 'Ice cream',
+        category: 'Ice Cream',
         icon: icecream
     },
     {
@@ -47,5 +47,11 @@ export const categories = [
     {
         category: 'Salad',
         icon: salad
+    },
+    {
+        category: 'Main Meals',
+        icon: meals
     }
+
+    
 ];
