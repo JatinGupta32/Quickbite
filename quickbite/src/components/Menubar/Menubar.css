@@ -67,36 +67,38 @@
   border-radius: 50px;
 }
 
-/* ===== LOGIN BUTTON ===== */
-.btn-outline-primary {
-  border-radius: 25px;
-  padding: 6px 18px;
-  border: 1.5px solid #ff3c00;
-  color: #ff3c00;
-  font-weight: 500;
+.btn-custom-login,
+.btn-custom-register {
+  padding: 5px 16px;        /* smaller padding */
+  border-radius: 22px;      /* slightly smaller curve */
+  font-size: 14px;          /* smaller text */
+  font-weight: 600;
   transition: 0.3s ease;
 }
 
-.btn-outline-primary:hover {
+/* Login */
+.btn-custom-login {
+  border: 1.8px solid #ff3c00;
+  background: transparent;
+  color: #ff3c00;
+}
+
+.btn-custom-login:hover {
   background: #ff3c00;
   color: white;
 }
 
-/* ===== REGISTER BUTTON ===== */
-.btn-outline-success {
-  border-radius: 25px;
-  padding: 6px 18px;
-  border: 1.5px solid #333;
-  color: #333;
-  font-weight: 500;
-  transition: 0.3s ease;
+/* Register */
+.btn-custom-register {
+  border: 1.8px solid #111827;
+  background: transparent;
+  color: #111827;
 }
 
-.btn-outline-success:hover {
-  background: #333;
+.btn-custom-register:hover {
+  background: #111827;
   color: white;
 }
-
 /* ===== DROPDOWN ===== */
 .dropdown-menu {
   border-radius: 10px;

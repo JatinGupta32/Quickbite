@@ -1,13 +1,12 @@
-/* ===== Card ===== */
 .food-card {
   background: white;
   border-radius: 20px;
   overflow: hidden;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
   transition: 0.3s ease;
-  height: 100%;              /* Important */
-  display: flex;             /* Important */
-  flex-direction: column;    /* Important */
+  height: 100%;             
+  display: flex;             
+  flex-direction: column;   
 }
 
 .food-card:hover {
