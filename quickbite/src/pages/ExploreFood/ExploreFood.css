@@ -1,0 +1,100 @@
+/* ===== Container ===== */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.explore-container {
+  display: flex;
+  justify-content: center;
+  margin: 0 0 40px;   /* remove top margin */
+}
+
+/* ===== EXPLORE PAGE BACKGROUND ===== */
+.explore-page {
+  background: linear-gradient(135deg, #fff6f1, #ffffff);
+  min-height: 100vh;
+  padding: 30px 40px 60px;
+}
+
+/* ===== Search Box ===== */
+.search-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: white;
+  padding: 12px;
+  border-radius: 40px;
+  border: 2px solid #f3f4f6;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+  width: 100%;
+  max-width: 750px;
+  transition: 0.3s ease;
+}
+
+.search-box:focus-within {
+  box-shadow: 0 12px 35px rgba(255, 107, 53, 0.25);
+}
+
+/* ===== Category Dropdown ===== */
+/* ===== Category Dropdown ===== */
+.category-select {
+  appearance: none;              /* Remove default arrow */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  background: #f3f4f6;
+  border: 2px solid #f3f4f6;
+  padding: 10px 40px 10px 18px;  /* Extra right padding for arrow */
+  border-radius: 40px;           /* Full pill shape */
+  font-weight: 500;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  transition: 0.3s ease;
+
+  background-image: url("data:image/svg+xml;utf8,<svg fill='%23ff6b35' height='18' viewBox='0 0 24 24' width='18' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 14px center; /* Arrow slightly inside */
+  background-size: 18px;
+}
+
+.category-select:hover {
+  border-color: #ff6b35;
+}
+
+.category-select:focus {
+  border-color: #ff6b35;
+  box-shadow: 0 0 0 3px rgba(255, 107, 53, 0.15);
+}
+
+/* ===== Search Input ===== */
+.search-input {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 10px 15px;
+  font-size: 15px;
+}
+
+/* ===== Search Button ===== */
+.search-btn {
+  border: none;
+  background: #ff6b35;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 25px;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.search-btn:hover {
+  background: #e85a24;
+  transform: scale(1.05);
+}
+
+.center-nav {
+  display: flex;
+  align-items: center;
+  gap: 35px;   /* spacing between Home, Explore, Contact */
+}

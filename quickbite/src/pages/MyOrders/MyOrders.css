@@ -1,3 +1,121 @@
-.table td {
-    vertical-align: middle;
+/* ===== PAGE BACKGROUND ===== */
+.orders-page {
+  background: linear-gradient(135deg, #fff6f1, #ffffff);
+  min-height: 100vh;
+}
+
+/* ===== TITLE ===== */
+.orders-title {
+  font-weight: 700;
+  font-size: 1.8rem;
+  color: #111827;
+}
+
+/* ===== WRAPPER ===== */
+.orders-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* ===== ORDER CARD ===== */
+.order-card {
+  background: white;
+  border-radius: 20px;
+  padding: 20px 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.06);
+  transition: 0.3s ease;
+}
+
+.order-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
+}
+
+/* ===== LEFT ICON ===== */
+.order-icon {
+  height: 55px;
+  width: 55px;
+  object-fit: contain;
+  margin-right: 20px;
+}
+
+/* ===== DETAILS ===== */
+.order-details {
+  flex: 1;
+}
+
+.order-items {
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #111827;
+}
+
+.order-meta {
+  display: flex;
+  gap: 20px;
+  color: #6b7280;
+  font-size: 14px;
+}
+
+/* ===== RIGHT SIDE ===== */
+.order-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* ===== STATUS BADGES ===== */
+.status-badge {
+  padding: 6px 14px;
+  border-radius: 30px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+/* Different statuses */
+.status-delivered {
+  background: #e6f7ed;
+  color: #16a34a;
+}
+
+.status-food-preparing {
+  background: #fff4e6;
+  color: #f97316;
+}
+
+.status-preparing {
+  background: #fff4e6;
+  color: #f97316;
+}
+
+.status-out-for-delivery {
+  background: #e6f0ff;
+  color: #2563eb;
+}
+
+/* ===== REFRESH BUTTON ===== */
+.refresh-btn {
+  border: none;
+  background: #ff6b35;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 12px;
+  transition: 0.3s ease;
+}
+
+.refresh-btn:hover {
+  background: #e85a24;
+  transform: rotate(90deg);
+}
+
+/* ===== EMPTY STATE ===== */
+.empty-orders {
+  background: white;
+  padding: 60px;
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.06);
 }

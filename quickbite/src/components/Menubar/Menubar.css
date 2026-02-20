@@ -1,7 +1,147 @@
-.active {
-    color: tomato !important;
+.custom-navbar {
+  background: #ffffff;
+  padding: 18px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 1px solid #e5e5e5;
 }
 
-.dropdown-menu li {
-    cursor: pointer;
+/* ===== NAV LINKS ===== */
+.nav-link {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0 18px;
+  color: #333 !important;
+  position: relative;
+  transition: 0.3s ease;
+}
+
+/* Hover Effect */
+.nav-link:hover {
+  color: #ff3c00 !important;
+}
+
+/* Active Link */
+.nav-link.active {
+  color: #ff3c00 !important;
+  font-weight: 600;
+}
+
+/* Orange Underline */
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  width: 0%;
+  height: 3px;
+  background: #ff3c00;
+  border-radius: 3px;
+  transition: 0.3s ease;
+}
+
+.nav-link.active::after {
+  width: 100%;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* ===== CART ICON ===== */
+.position-relative img {
+  transition: 0.3s ease;
+}
+
+.position-relative img:hover {
+  transform: scale(1.1);
+}
+
+/* ===== CART BADGE ===== */
+.badge {
+  background: #e85a24 !important;
+  color: white;
+  font-size: 11px;
+  padding: 4px 7px;
+  border-radius: 50px;
+}
+
+/* ===== LOGIN BUTTON ===== */
+.btn-outline-primary {
+  border-radius: 25px;
+  padding: 6px 18px;
+  border: 1.5px solid #ff3c00;
+  color: #ff3c00;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.btn-outline-primary:hover {
+  background: #ff3c00;
+  color: white;
+}
+
+/* ===== REGISTER BUTTON ===== */
+.btn-outline-success {
+  border-radius: 25px;
+  padding: 6px 18px;
+  border: 1.5px solid #333;
+  color: #333;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.btn-outline-success:hover {
+  background: #333;
+  color: white;
+}
+
+/* ===== DROPDOWN ===== */
+.dropdown-menu {
+  border-radius: 10px;
+  border: 1px solid #eee;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.dropdown-item:hover {
+  background: #fff4ef;
+  color: #ff3c00;
+}
+
+/* ===== BRAND LOGO TEXT ===== */
+.brand-text {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 28px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+}
+
+.brand-orange {
+  color: #ff3c00;
+}
+
+.brand-black {
+  color: #111827;   /* Premium Dark */
+}
+
+/* ===== BRAND LOGO WRAPPER ===== */
+.brand-logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+/* Add gap between logo and text */
+.brand-icon {
+  margin-right: 14px;   /* Adjust between 12–18px if needed */
+}
+
+.center-nav {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }

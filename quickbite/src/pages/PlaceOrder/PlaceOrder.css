@@ -1,0 +1,114 @@
+/* ===== PAGE BACKGROUND ===== */
+.checkout-page {
+  background: linear-gradient(135deg, #fff6f1, #ffffff);
+  min-height: 100vh;
+}
+
+/* ===== LOGO CENTER ===== */
+.py-5.text-center img {
+  filter: drop-shadow(0 5px 15px rgba(0, 0, 0, 0.08));
+}
+
+/* ===== SUMMARY TITLE ===== */
+.summary-title span:first-child {
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #111827;
+}
+
+/* ===== CART BADGE ===== */
+.summary-title .badge {
+  background: #ff6b35 !important;
+  font-weight: 600;
+}
+
+/* ===== SUMMARY CARD ===== */
+.checkout-summary {
+  border-radius: 18px;
+  overflow: hidden;
+  border: none;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.06);
+}
+
+.checkout-summary .list-group-item {
+  border: none;
+  padding: 16px 18px;
+  transition: 0.3s ease;
+}
+
+.checkout-summary .list-group-item:hover {
+  background: #fff3ed;
+}
+
+/* ===== TOTAL ROW ===== */
+.checkout-summary strong {
+  font-size: 1.1rem;
+  color: #111827;
+}
+
+/* ===== BILLING TITLE ===== */
+.billing-title {
+  font-weight: 700;
+  font-size: 1.4rem;
+  color: #111827;
+}
+
+/* ===== FORM CARD EFFECT ===== */
+form {
+  background: white;
+  padding: 35px;
+  border-radius: 20px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.06);
+}
+
+/* ===== INPUT STYLING ===== */
+.form-control,
+.form-select {
+  border-radius: 12px;
+  padding: 10px 14px;
+  border: 1.5px solid #eee;
+  transition: 0.3s ease;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: #ff6b35;
+  box-shadow: 0 0 0 3px rgba(255, 107, 53, 0.15);
+}
+
+/* ===== INPUT GROUP ICON ===== */
+.input-group-text {
+  background: #ff6b35;
+  color: white;
+  border-radius: 12px 0 0 12px;
+  border: none;
+}
+
+/* ===== SUBMIT BUTTON ===== */
+.checkout-btn {
+  background: #ff6b35;
+  border: none;
+  border-radius: 30px;
+  padding: 14px;
+  font-weight: 600;
+  color: white;
+  transition: 0.3s ease;
+}
+
+.checkout-btn:hover {
+  background: #e85a24;
+  transform: translateY(-3px);
+  box-shadow: 0 15px 30px rgba(255, 107, 53, 0.3);
+}
+
+.checkout-btn:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+/* ===== RESPONSIVE POLISH ===== */
+@media (max-width: 768px) {
+  form {
+    padding: 20px;
+  }
+}

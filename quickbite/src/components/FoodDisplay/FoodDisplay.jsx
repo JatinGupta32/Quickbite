@@ -13,7 +13,7 @@ const FoodDisplay = ({category, searchText}) => {
     ));
 
   return (
-    <div className="container">
+    <div className="container-fluid p-0 m-0 explore-food-wrapper">
         <div className="row">
             {filteredFoods.length > 0 ? (
                 filteredFoods.map((food, index) => (

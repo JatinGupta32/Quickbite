@@ -1,34 +1,78 @@
-/* Card Styling */
+/* ===== PAGE BACKGROUND ===== */
+.orders-page {
+  background: linear-gradient(135deg, #fff6f1, #ffffff);
+  min-height: 100vh;
+  padding: 60px 0;
+}
+
+/* ===== ORDER CARD ===== */
 .order-card {
-  background: #ffffff;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
-  transition: all 0.3s ease-in-out;
-  border-left: 5px solid #4f46e5; /* Standard Indigo accent */
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  transition: 0.3s ease;
 }
 
 .order-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.08);
 }
 
-/* Status Badge Colors */
+/* ===== STATUS BADGE ===== */
 .status-badge {
-  font-weight: 500;
+  border-radius: 50px;
+  font-weight: 600;
   font-size: 13px;
-  border-radius: 20px;
+  letter-spacing: 0.3px;
 }
 
-.status-delivered {
-  background-color: #d1fae5;
-  color: #065f46;
-}
-
-.status-out {
-  background-color: #fef3c7;
-  color: #92400e;
-}
-
+/* Preparing */
+/* Preparing */
 .status-preparing {
-  background-color: #e0e7ff;
-  color: #3730a3;
+  background: #ff7a1a;
+  color: white;
+}
+
+/* Out for delivery */
+.status-out {
+  background: #2563eb;
+  color: white;
+}
+
+/* Delivered */
+.status-delivered {
+  background: #16a34a;
+  color: white;
+}
+
+/* ===== STATUS PULSE DOT ===== */
+.status-preparing::before,
+.status-out::before,
+.status-delivered::before {
+  content: "● ";
+  font-size: 10px;
+}
+
+/* ===== DROPDOWN ===== */
+.form-select {
+  border-radius: 12px;
+  border: 1px solid #eee;
+  padding: 6px 12px;
+  transition: 0.3s ease;
+}
+
+.form-select:focus {
+  border-color: #ff6b35;
+  box-shadow: 0 0 0 3px rgba(255, 107, 53, 0.15);
+}
+
+/* ===== ORDER ID ===== */
+.order-card h6 {
+  font-weight: 700;
+}
+
+/* ===== ITEMS TEXT ===== */
+.order-card .text-secondary {
+  font-size: 14px;
+  line-height: 1.6;
 }

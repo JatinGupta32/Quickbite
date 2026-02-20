@@ -1,20 +1,130 @@
+/* ===== PAGE BACKGROUND ===== */
+.cart-page {
+  background: linear-gradient(135deg, #fff6f1, #ffffff);
+  min-height: 100vh;
+}
+
+/* ===== TITLE ===== */
+.cart-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #111827;
+}
+
+/* ===== MAIN CART CARD ===== */
+.cart-card {
+  border-radius: 20px;
+  border: none;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.05);
+  padding: 10px;
+}
+
+/* ===== CART ITEM ===== */
+.cart-item {
+  transition: 0.3s ease;
+  padding: 15px;
+  border-radius: 15px;
+}
+
+.cart-item:hover {
+  background: #fff3ed;
+  transform: translateY(-3px);
+}
+
+/* ===== PRODUCT IMAGE ===== */
 .cart-item img {
-    max-width: 100px;
-    height: auto;
+  border-radius: 15px;
+  transition: 0.3s ease;
+}
+
+.cart-item img:hover {
+  transform: scale(1.05);
+}
+
+/* ===== QUANTITY BUTTONS ===== */
+.input-group .btn {
+  border-radius: 8px;
+  border: 1px solid #ff6b35;
+  color: #ff6b35;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.input-group .btn:hover {
+  background: #ff6b35;
+  color: white;
 }
 
 .quantity-input {
-    width: 50px;
+  border-radius: 8px;
+  border: 1px solid #eee;
+  font-weight: 600;
 }
 
-.cart-summary {
-    background-color: #f8f9fa;
-    border-radius: 10px;
+/* ===== DELETE BUTTON ===== */
+.btn-outline-danger {
+  border-radius: 8px;
+  transition: 0.3s ease;
 }
 
-.cart-item hr {
-    margin-top: 10px;
-    height: 2px;
-    background-color: #e2e2e2;
-    border: none;
+.btn-outline-danger:hover {
+  background: #ff4d4d;
+  color: white;
+}
+
+/* ===== CONTINUE SHOPPING BUTTON ===== */
+.btn-outline-primary {
+  border-radius: 30px;
+  border: 2px solid #ff6b35;
+  color: #ff6b35;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.btn-outline-primary:hover {
+  background: #ff6b35;
+  color: white;
+  transform: translateY(-2px);
+}
+
+/* ===== SUMMARY CARD ===== */
+.premium-summary {
+  border-radius: 20px;
+  border: none;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.07);
+  position: sticky;
+  top: 120px;
+}
+
+/* ===== SUMMARY TITLE ===== */
+.premium-summary .card-title {
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: #111827;
+}
+
+/* ===== TOTAL SECTION ===== */
+.premium-summary strong {
+  font-size: 1.1rem;
+}
+
+/* ===== CHECKOUT BUTTON ===== */
+.premium-summary .btn-primary {
+  background: #ff6b35;
+  border: none;
+  border-radius: 30px;
+  padding: 12px;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.premium-summary .btn-primary:hover {
+  background: #e85a24;
+  transform: translateY(-3px);
+  box-shadow: 0 12px 25px rgba(255, 107, 53, 0.3);
+}
+
+.premium-summary .btn-primary:disabled {
+  background: #ccc;
+  cursor: not-allowed;
 }

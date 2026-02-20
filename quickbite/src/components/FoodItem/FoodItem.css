@@ -1,0 +1,153 @@
+/* ===== Card ===== */
+.food-card {
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+  transition: 0.3s ease;
+  height: 100%;              /* Important */
+  display: flex;             /* Important */
+  flex-direction: column;    /* Important */
+}
+
+.food-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+/* ===== Image ===== */
+.food-image-wrapper img {
+  width: 100%;
+  height: 230px;        /* Fixed height */
+  object-fit: cover;
+}
+
+.food-image-wrapper img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  transition: 0.4s ease;
+}
+
+.food-card:hover .food-image-wrapper img {
+  transform: scale(1.05);
+}
+
+/* ===== Price Badge ===== */
+.price-badge {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: #ff5e1f;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+/* ===== Content ===== */
+.food-content {
+  padding: 18px;
+  flex-grow: 1;        /* Important for equal height */
+  display: flex;
+  flex-direction: column;
+}
+
+.food-content h5 {
+  font-weight: 600;
+  margin-bottom: 8px;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 2;   /* max 2 lines */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.food-content p {
+  font-size: 14px;
+  color: #6b7280;
+  margin-bottom: 10px;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 2;   /* Show only 2 lines */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* ===== Rating ===== */
+.food-rating {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #f59e0b;
+}
+
+.food-rating span {
+  color: #6b7280;
+  margin-left: 5px;
+}
+
+/* ===== Footer ===== */
+.food-footer {
+  margin-top: auto;   /* Push footer to bottom */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 18px;
+  border-top: 1px solid #f3f4f6;
+}
+
+/* View Button */
+.view-btn {
+  text-decoration: none;
+  color: #ff5e1f;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.view-btn:hover {
+  color: #e85a24;
+}
+
+/* Add Button */
+.add-btn {
+  background: #ff5e1f;
+  border: none;
+  color: white;
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.add-btn:hover {
+  background: #e85a24;
+  transform: scale(1.05);
+}
+
+/* Quantity Controls */
+.qty-control {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.qty-control button {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: none;
+  background: #ff5e1f;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.qty-control button:hover {
+  background: #e85a24;
+}
+
+.qty-control span {
+  font-weight: 600;
+}

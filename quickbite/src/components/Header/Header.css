@@ -1,12 +1,70 @@
-.header {
-    padding: 5rem;
-    margin-bottom: 1rem;
-    border-radius: 0.3rem;
-    margin-top: 0.25rem;
-    color: white;
-    background-image: url("../../assets/header.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+
+.hero-section {
+  position: relative;
+  height: 50vh;
+  border-radius: 25px;
+  margin: 20px 5px;
+  overflow: hidden;
+  background: url("https://images.unsplash.com/photo-1504674900247-0877df9cc836")
+    center/cover no-repeat;
+  transition: 0.4s ease-in-out;
 }
-  
+
+/* Dark overlay */
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.4s ease-in-out;
+}
+
+/* On hover - darken more */
+.hero-section:hover .hero-overlay {
+  background: rgba(0, 0, 0, 0.65);
+}
+
+/* Hero content */
+.hero-content {
+  color: white;
+  transition: 0.4s ease-in-out;
+}
+
+/* Text grow effect */
+.hero-section:hover .hero-title {
+  transform: scale(1.08);
+}
+
+.hero-title {
+  font-size: 3rem;
+  font-weight: 700;
+  transition: 0.4s ease-in-out;
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  transition: 0.4s ease-in-out;
+}
+
+.hero-btn {
+    background: #ff5e1f;
+  color: white;
+  border-color: #ff5e1f;
+  padding: 12px 30px;
+  border-radius: 30px;
+  font-weight: 500;
+  transition: all 0.35s ease;
+}
+
+/* Hover Effect */
+.hero-btn:hover {
+    border: 2px solid white;
+    
+    background: white;
+    color: #ff5e1f;
+  font-weight: 700;
+  transform: scale(1.05);
+}

@@ -1,48 +1,117 @@
-.explore-menu-list::-webkit-scrollbar {
-    display: none;
+/* ===== Section ===== */
+.explore-section {
+  padding: 25px 40px;
+  background: #fff6f1;
+  border-radius: 30px;
+  margin-bottom: 15px;
 }
 
-.explore-menu-list {
-    scrollbar-width: none;
+/* ===== Header ===== */
+.explore-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3px;
 }
 
-.explore-menu-list-item img {
-    cursor: pointer;
+.explore-header h2 {
+  font-size: 28px;
+  font-weight: 700;
+  margin: 0;
+  color: #1f2937;
 }
 
-.explore-menu-list-item .active {
-    border: 5px solid tomato;
-    padding: 2px;
+.explore-header p {
+  margin-top: 6px;
+  color: #6b7280;
+  font-size: 15px;
 }
 
-.explore-menu-list-item p {
-    color: #747474;
-    cursor: pointer;
+/* ===== Scroll Buttons ===== */
+.scroll-buttons svg {
+  font-size: 20px;
+  margin-left: 15px;
+  cursor: pointer;
+  padding: 3px;
+  border-radius: 50%;
+  background: white;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  transition: 0.3s ease;
 }
 
-.scroll-icon {
-    font-size: 24px;
-    cursor: pointer;
-    margin-left: 10px;
-    color: #747474;
-    transition: color 0.2s;
+.scroll-buttons svg:hover {
+  background: #ff5e1f;
+  color: white;
+  transform: scale(1.1);
 }
 
-.scroll-icon:hover {
-    color: tomato;
+/* ===== Slider ===== */
+.category-slider {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 35px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  white-space: nowrap;
+  padding-bottom: 10px;
 }
 
-.explore-menu hr {
-    margin: 10px 0px;
-    height: 2px;
-    background-color: #e2e2e2;
-    border: none;
+.category-slider::-webkit-scrollbar {
+  display: none;
 }
 
-.explore-menu-list-item .active {
-    border: 4px solid tomato;
+/* ===== Category Card ===== */
+.category-card {
+  flex: 0 0 auto;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.25s ease;
 }
 
-.explore-menu-list-item .text-active {
-    color: tomato;
+/* ===== Image Wrapper ===== */
+.image-wrapper {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: white;
+  padding: 5px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+  transition: 0.3s ease;
+}
+
+.image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* ===== Hover Effect ===== */
+.category-card:hover .image-wrapper {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.category-card p {
+  margin-top: 14px;
+  font-weight: 600;
+  font-size: 16px;
+  color: #1f2937;
+  transition: 0.25s ease;
+}
+
+.category-card:hover p {
+  color: #ff5e1f;
+}
+
+/* ===== Active ===== */
+.category-card.active .image-wrapper {
+  border: 4px solid #ff5e1f;
+  box-shadow: 0 10px 30px rgba(255, 107, 53, 0.25);
+}
+
+.category-card.active p {
+  color: #ff5e1f;
 }

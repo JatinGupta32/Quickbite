@@ -1,4 +1,4 @@
-import logo from './logo.jpg';
+import logo from './logo.png';
 import cart from './cart.png';
 
 import biryani from './biryani.png';
