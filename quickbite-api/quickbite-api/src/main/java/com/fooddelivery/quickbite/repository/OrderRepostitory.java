@@ -1,4 +1,14 @@
 package com.fooddelivery.quickbite.repository;
 
-public class OrderRepostitory {
+import com.fooddelivery.quickbite.entity.OrderEntity;
+import org.springframework.data.mongodb.repository.MongoRepository;
+import org.springframework.stereotype.Repository;
+
+import java.util.List;
+import java.util.Optional;
+
+@Repository
+public interface OrderRepostitory extends MongoRepository<OrderEntity,String> {
+    List<OrderEntity> findByUserId(String userId);
+    Optional<OrderEntity> findByRazorpayOrderId(String razorpayOrderId);
 }
