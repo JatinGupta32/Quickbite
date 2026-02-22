@@ -1,10 +1,10 @@
 import axios from "axios";
 
-const API_URL = 'http://localhost:8080/api/foods';
+const url = import.meta.env.VITE_API_URL;
 
 export const fetchFoodList = async () => {
     try {
-        const response = await axios.get(API_URL);
+        const response = await axios.get(`${url}/api/foods`);
         return response.data;
     } catch (error) {
         console.log('Error fetching food list:', error);
@@ -14,7 +14,7 @@ export const fetchFoodList = async () => {
 
 export const fetchFoodDetails = async (id) => {
     try {
-        const response = await axios.get(API_URL+"/"+id);
+        const response = await axios.get(`${url}/api/foods/${id}`);
         return response.data;
     } catch (error) {
         console.log('Error fetching food details:', error);

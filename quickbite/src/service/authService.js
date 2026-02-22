@@ -1,11 +1,11 @@
 import axios from "axios";
 
-const API_URL = "http://localhost:8080/api";
+const url = import.meta.env.VITE_API_URL;
 
 export const registerUser = async (data) => {
     try {
         const response = await axios.post(
-            API_URL+"/register",
+            `${url}/api/register`,
             data
           );
         return response
@@ -16,7 +16,7 @@ export const registerUser = async (data) => {
 
 export const login = async (data) => {
     try {
-        const response = await axios.post(API_URL+"/login", data);
+        const response = await axios.post(`${url}/api/login`, data);
         console.log(response);
         return response;
     } catch (error) {

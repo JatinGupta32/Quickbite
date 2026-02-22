@@ -1,10 +1,10 @@
 import axios from "axios";
 
-const API_URL = "http://localhost:8080/api/orders";
+const url = import.meta.env.VITE_API_URL;
 
 export const fetchUserOrders = async (token) => {
     try {
-        const response = await axios.get(API_URL, {
+        const response = await axios.get(`${url}/api/orders`, {
             headers: { Authorization: `Bearer ${token}` },
         }); 
         return response.data;
@@ -17,7 +17,7 @@ export const fetchUserOrders = async (token) => {
 export const createOrder = async (orderData, token) => {
     try {
         const response = await axios.post(
-            API_URL+"/create",
+            `${url}/api/orders/create`,
             orderData,
             { headers: { Authorization: `Bearer ${token}` } }
         );
@@ -31,7 +31,7 @@ export const createOrder = async (orderData, token) => {
 export const verifyPayment = async (paymentData, token) => {
     try {
         const response = await axios.post(
-            API_URL+"/verify",
+            `${url}/api/orders/verify`,
             paymentData,
             { headers: { Authorization: `Bearer ${token}` } }
         );
@@ -44,7 +44,7 @@ export const verifyPayment = async (paymentData, token) => {
 
 export const deleteOrder = async (orderId, token) => {
     try {
-        await axios.delete(API_URL+"/"+ orderId, {
+        await axios.delete(`${url}/api/orders/${orderId}`, {
             headers: { Authorization: `Bearer ${token}` },
         });
     } catch (error) {
