@@ -285,7 +285,19 @@ const PlaceOrder = () => {
                       onChange={onChangeHandler}
                     >
                       <option value="">Choose...</option>
+                      <option>Uttar Pradesh</option>
+                      <option>Madhya Pradesh</option>
+                      <option>Bihar</option>
+                      <option>Punjab</option>
+                      <option>Maharashtra</option>
+                      <option>Gujarat</option>
+                      <option>West Bengal</option>
+                      <option>Chattisgarh</option>
+                      <option>Odisha</option>
+                      <option>Telengana</option>
+                      <option>Assam</option>
                       <option>Karnataka</option>
+                      <option>Tamil Nadu</option>
                     </select>
                   </div>
 
@@ -302,7 +314,18 @@ const PlaceOrder = () => {
                       onChange={onChangeHandler}
                     >
                       <option value="">Choose...</option>
-                      <option>Banglore</option>
+                      <option>Ayodhya</option>
+                      <option>Mumbai</option>
+                      <option>Delhi</option>
+                      <option>Chennai</option>
+                      <option>Kolkata</option>
+                      <option>Hyderabad</option>
+                      <option>Pune</option>
+                      <option>Ahmedabad</option>
+                      <option>Jaipur</option>
+                      <option>Surat</option>
+                      <option>Lucknow</option>
+                      <option>Noida</option>
                     </select>
                   </div>
 
